@@ -1,0 +1,7 @@
+#how to set an alias for the current session only
+alias ..='cd ..'
+#How to remove all alias set for the current session
+unalias -a 
+#How to remove a particular alias only 
+unalias ..
+
