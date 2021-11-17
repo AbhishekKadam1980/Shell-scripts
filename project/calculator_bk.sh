@@ -1,14 +1,9 @@
 #!/bin/bash
 
 #accept parameters from the command line 
-echo "Enter first variable"
-read variable1
-
-echo "Enter second variable"
-read variable2
-
-echo "Enter arithmetic operation"
-read arithmetic_operator
+variable1=$1
+variable2=$2
+arithmetic_operator=$3
 
 
 #logic to perform arithmetic calculations
