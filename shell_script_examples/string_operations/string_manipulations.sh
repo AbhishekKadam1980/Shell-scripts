@@ -1,4 +1,5 @@
 #!/bin/bash 
+
 string=abcddcba
 echo "the original string is $string"
 
@@ -11,6 +12,6 @@ echo ${string//d/c}
 #to remove a particular pattern from the string#
 echo ${string//d}
 
-#to find a pattern from the beginning of the string and replace it#
-echo ${string/d /c}
+#Find a pattern from the beginning of the string and replace it
+echo ${string/#d/c}
 
