@@ -1,8 +1,8 @@
 #!/bin/bash
 validate_arguments(){
 	if [[ $@ <1 ]];then
-		echo "Please provide a parameter"
+		return 1
 	else
-		exit 0
+		return 0 
 	fi
 }
