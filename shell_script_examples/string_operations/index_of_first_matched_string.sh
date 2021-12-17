@@ -16,7 +16,7 @@ main(){
 
 	local left=${string%%$substring*}
     
-	echo $left
+	echo ${#left}
 
 #	[[ $left != $string ]] && echo ${#left} || echo -1 
 }
