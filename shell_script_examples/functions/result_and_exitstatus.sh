@@ -6,3 +6,5 @@ control_func(){
 		echo "Failed"
 	fi;
 }
+
+control_func $@
