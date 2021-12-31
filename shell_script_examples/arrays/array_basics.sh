@@ -42,5 +42,12 @@ names=(${names[@]} Namrata)
 #echo ${!names[@]}
 
 #Slicing elements in an array
-echo ${names[@]}
+#echo ${names[@]}
+
+#How to create a read only array
+#declare -ra read_only_array=(Deelip Manda Akshay Aniket )
+#echo ${read_only_array[@]}
+
+#NOTE: We cannot append or remove any element from a read_only_array
+#read_only_array+=Abhishek
 

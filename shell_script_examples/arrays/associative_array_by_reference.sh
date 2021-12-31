@@ -6,3 +6,4 @@ show_ref_arrray(){
 	local -n msgs=$1
 	echo $(msgs[@])
 }
+
