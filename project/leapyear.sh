@@ -5,6 +5,29 @@ while (( i<5 ));do
 	read year
 	 
 	case ${#year} in
+		4)  	(($year%4 == 0)) && (($year%100 != 0))|| (($year%400 == 0)) &&  echo "Leap year"|| echo "Not leap year"
+        ((i++))
+
+
+        echo "$i iteration completed" 
+        echo "Would you like to continue?"
+        read  user_input
+
+        case $user_input in
+
+                'y')
+                        continue
+                        ;;
+                'n')
+                        echo "Program Terminated. BYE"
+                        break
+                        ;;
+                *)
+                        echo "Invalid choice, Program will now exit"
+                        exit 0
+                esac
+
+			;;
 		5)
 			echo "Please enter a valid year"
 			exit 0
